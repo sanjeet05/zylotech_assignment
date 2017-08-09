@@ -1,0 +1,38 @@
+<div class="modal-content" ng-init="initAddPhotoModal()">
+  <form name="photoForm" novalidate>
+  <div class="modal-header bg-info">
+    <button type="button" class="close" ng-click="$dismiss()" aria-label="Close">
+      <em class="ion-ios-close-empty sn-link-close"></em>
+    </button>
+    <h4 class="modal-title ml_text_white">Add Photo</h4>
+  </div>
+  <div class="modal-body">
+    <!-- <input type="file" accept="image/*" image="image"/> -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group" show-errors>
+          <label for="photoURL">Photo URL</label>
+          <input type="url" id="photoURL" name="photoURL" class="form-control" ng-model="photoURL" placeholder="Photo URL" required/>
+          <div ng-show="error" role="alert">
+              <p class="help-block error-text">Photo URL is required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="input" id="photoText" name="photoText" class="form-control" ng-model="photoText" placeholder="Type something"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="addPhoto(photoForm.$valid)">Upload</button>
+    <button type="button" class="btn btn-warning" ng-click="cancel()">Cancel</button>
+  </div>
+</form>
+</div>

@@ -1,0 +1,4 @@
+3
+'i love JavaScript'.XyloHack(67)
+'THE Cake is A LIE'.XyloHack(8)
+'iAmWobBly'.XyloHack(1)

@@ -19,8 +19,9 @@ body{
 .myphoto{
 	box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.15);
 	margin: 5px;
+	text-align: center;
 }
-.myphoto img{width: 100%; height: auto;}
+.myphoto img{width: auto; height: 320px; max-width: 100%;}
 .delete_btn{
   position: absolute;
 	left: 20px;

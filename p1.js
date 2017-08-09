@@ -6,6 +6,11 @@ fs.readFile('p1-input.txt', 'utf8', function (err, data) {
       return console.error(err);
    }
 
+   // Helper: make a first letter is capital
+   function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+   }
+
    var array = data.toString().split('\n');
    var noOfFiles = array[0];
    var fileList = [];
@@ -29,16 +34,14 @@ fs.readFile('p1-input.txt', 'utf8', function (err, data) {
          spaceCount = spaceCount+1;
        }
      }else {
+       if(text === ''){
+         return console.error("Error in input file");
+       }
        text = text.substring(0, text.lastIndexOf('.'));
        text = capitalizeFirstLetter(text);
        fileList.push(text);
        spaceCount = 0;
      }
-   }
-
-   // make a first letter is capital
-   function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
    }
 
   // make a fileName in camelCase
@@ -57,7 +60,6 @@ fs.readFile('p1-input.txt', 'utf8', function (err, data) {
     stream.end();
   });
 
+  console.log("Program one has been Completed!");
 
 });
-
-console.log("Program one has been Completed!");

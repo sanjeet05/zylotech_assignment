@@ -47,6 +47,6 @@ fs.readFile('p2-input.txt', 'utf8', function (err, data) {
      stream.end();
    });
 
-});
+   console.log("Program two has been Completed!");
 
-console.log("Program two has been Completed!");
+});

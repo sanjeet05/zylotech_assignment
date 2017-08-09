@@ -18,7 +18,7 @@ superman
 http://cdn.darkhorizons.com/wp-content/uploads/2016/08/david-ayer-keen-to-do-a-superman-film.jpg
 
 ## To see the output of the programme 1 and 2.
-1. install the **nodejs** in your system globally
+1. install the **nodejs** in your system globally (https://nodejs.org/en/)
 2. open the terminal/cmd on the root folder (EX: zylotech_assignment)
 3. run the command: **npm install**
 
